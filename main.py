@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded")
 
-ds = pd.read_csv('Filtering/Test.csv')
+ds = pd.read_csv('C:\Users\maruf\Desktop\ST\Test.csv')
 ds["date"] = pd.to_datetime(ds["date"])
 ds['day'] = ds['date'].dt.day
 ds['rpm_min'] = ds['rpm']
@@ -271,5 +271,3 @@ try:
 
 except Exception as e:
     pass
-
-# if __name__ == '__main__':
