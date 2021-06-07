@@ -207,9 +207,9 @@ try:
                                 color="miles", template="plotly",
                                 color_discrete_sequence=px.colors.sequential.Plasma_r,
                                 animation_frame="st2",
-                                size_max=1, height=750, width=950, hover_name="cod2")
+                                size_max=1, height=750, width=750, hover_name="cod2")
 
-        col1, col2 = st.beta_columns([1, 2])
+        col1, col2 = st.beta_columns([1, 1])
         col1.write(f"### **Avarage Loads Statistics from {name[0]}**")
         col2.write(f"### **Graph of Loads From {name[0]}**")
         col2.plotly_chart(fig2)
